@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+table{margin-left:auto;
+	  margin-right:auto;
+	  border:2px solid black;
+	  width:70%;
+	  height:10%;}
+tr{border:2px solid black;
+	height:50px;
+	width:70px;
+	}
+td,th{text-align:center;
+	border:1px solid black;}
+button{color:white;
+	   background-color:mediumblue;
+	   padding:8px 8px;
+	   border:none;
+	   border-radius:5px;}
+.filter{background-color:lightgray;
+		border-radius:3px;
+		text-align:center;}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Diagnose Register </title>
+<link rel="stylesheet" href="form.css">
+<style>
+fieldset{width:500px;}
+</style>
+</head>
+<body>
+<center>
+<fieldset>
+<h2><b>Patient Diagnose</b></h2>
+<form name="pform" action="Diagnose_db" method="get">
+<center><h4><b>Patient Diagnose details</b></h4></center>
+<br>PatientID&emsp;&ensp;&nbsp;&emsp;&emsp;&emsp;:&emsp;<input type="number" name="pid" required><br>
+<br><br>Diagnose&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;<input type="text" name="diagnose" required><br>
+<br><br>Treatement Remarks&emsp;:&emsp;<input type="text" name="dremarks"  required><br>
+<br><br>Diagnosis Date&emsp;&emsp;&ensp;:&emsp;<input type="date" name="ddate"><br>
+<br><br>DoctorID&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;<input type="number" name="did" required><br>
+<br><br><br><center><input id="submit" type="submit" value="Submit">&emsp;&emsp;<input id="reset" type="reset" value="Reset"></center>
+</form></fieldset></center>
+</body>
+</html>

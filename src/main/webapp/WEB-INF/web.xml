@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>HospitalDatabase</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>Doctor_db</servlet-name>
+  	<servlet-class>Doctor_db</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Image_doctor</servlet-name>
+  	<servlet-class>Image_doctor</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Patientdb</servlet-name>
+  	<servlet-class>Patientdb</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Diagnose_db</servlet-name>
+  	<servlet-class>Disgnose_db</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Bill_db</servlet-name>
+  	<servlet-class>Bill_db</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Admission_db</servlet-name>
+  	<servlet-class>Admission_db</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Validate</servlet-name>
+  	<servlet-class>Validate</servlet-class>
+  </servlet>
+</web-app>

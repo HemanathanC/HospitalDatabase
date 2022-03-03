@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PATIENT REGISTRATION</title>
+<link rel="stylesheet" href="form.css">
+<style>
+fieldset{width:600px;}
+</style>
+</head>
+<body>
+<center>
+<fieldset>
+<h2><b>Patient Registration</b></h2>
+<form name="pform" action="Patientdb" method="get">
+<center><h4><b>Patient details</b></h4></center>
+<br>PatientID&emsp;&ensp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;<input type="number" name="pid" required><br>
+<br><br>Patient Name&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;:&emsp;<input type="text" name="name" required><br>
+<br><br>Gender&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&nbsp;:&emsp;<input type="radio" name="sex" value="Male" >Male&emsp;&ensp;<input type="radio" name="sex" value="Female" >Female<br>
+<br><br>Age&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;:&emsp;<input type="number" name="age" required><br>
+<br><br>Blood Type&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;:&emsp;<input type="text" name="blood" required><br>
+<br><br>State&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;:&emsp;<input type="text" name="state" ><br>
+<br><br>Address&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;<input type="text" name="add" required><br>
+<br><br>Pincode&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;<input type="number" name="pin" ><br>
+<br><br>Weight(in kgs)&emsp;&emsp;&emsp;&emsp;&ensp;:&emsp;<input type="number" name="weight" ><br>
+<br><br>Phone No&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;:&emsp;<input type="number" name="phone" ><br>
+<br><br>DoctorID&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;:&emsp;<input type="number" name="did" ><br>
+<br><br><br><center><input id="submit" type="submit" value="Submit">&emsp;<input id="reset" type="reset" value="Reset"></center>
+</form></fieldset></center>
+</body>
+</html>

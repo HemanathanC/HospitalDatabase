@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="jquery-ui.css">
+<link rel="stylesheet" href="form.css">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+function check()
+{
+	let p=document.form.dform.pwd.value;
+	let cp=document.form.dform.cpwd.value;
+	if(p!=cp){
+		document.getElementById("pass").innerHTML.style.color="red";
+		document.getElementById("pass").innerHTML="password and confirm password is not matching";
+	}
+	}
+</script>
+<script>
+$(function(){
+	var options=["Allegists/Immunologists",
+				 "Anesthesiologists",
+				 "Cardiologists",
+				 "Colon and Rectal Surgeons",
+				 "Critical Care Medicine Specialists",
+				 "Dermatologists","Endocrinologists",
+				 "Emergency Medicine Specialists",
+				 "Family Physicians",
+				 "Gastroentologists",
+				 "General Surgeons",				 
+				 "Hematologists",
+				 "Infectious Disease Specialists",
+				 "Internists",
+				 "Medical Geneticists",
+				 "Nephrologists",
+				 "Neurologists",
+				 "Obstetricians and Gynecologists",
+				 "Oncologists",
+				 "Opththalmologists",
+				 "Osteopaths",
+				 "Otolaryngologists",
+				 "Pathologists",
+				 "Pediatricians",
+				 "Physiatrists",
+				 "Plastic Surgeons",
+				 "Podiatrists",
+				 "Psychiatrists",
+				 "Pulmonologists",
+				 "Radiologists",
+				 "Rheumatologists",
+				 "Urologists",
+				 ];
+	$("#options").autocomplete({
+		source:options
+	});
+});
+</script>
+<style>
+fieldset{width:600px;}
+</style>
+</head>
+<body>
+<center>
+<fieldset>
+<h2><b>Doctor Registration</b></h2>
+<form name="dform" action="Doctor_db" method="get" enctype="multipart/form-data">
+<center><h4><b>Personal details</b></h4></center>
+<br>DoctorID&ensp;&emsp;&emsp;&emsp;&emsp;:&emsp;<input type="number" name="did" required><br>
+<br><br>Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;<input type="text" name="name" required><br>
+<br><br>Photo&emsp;:&emsp;<input type="file" name="img" ><br>
+<br><br>Gender&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;:&emsp;<input type="radio" name="sex" value="Male" >Male&emsp;<input type="radio" name="sex" value="Female" >Female<br>
+<br><br>Age&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;:&emsp;<input type="number" name="age" required><br>
+<br><br>State&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;:&emsp;<input type="text" name="state" required><br>
+<br><br>District&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;:&emsp;<input type="text" name="district" required><br>
+<br><br>City&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;:&emsp;<input type="text" name="city" ><br>
+<br><br>Address&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;<input type="text" name="add" required><br>
+<br><br>Specialist&ensp;&ensp;&nbsp;&emsp;&emsp;&emsp;:&emsp;<input name="qualification" id="options"required><br>
+<br><br>Experience&ensp;&emsp;&emsp;&emsp;:&emsp;<input name="experience"><br>
+<br><br>College Name&nbsp;&emsp;&emsp;:&emsp;<input type="text" name="clgname"required><br> 
+<br><br>Phone No&emsp;&emsp;&emsp;&emsp;:&emsp;<input type="number" name="phone" ><br>
+<br><br>Join Date&emsp;&ensp;&emsp;&emsp;&emsp;:&emsp;<input type='date' name="jdate"required><br>
+<br><br>
+<center><h4><b>Login details</b></h4></center>
+<br>Username&emsp;&emsp;&emsp;&emsp;&nbsp;:&emsp;<input type="text" name="uname" required><br>
+<br><br>Password&emsp;&emsp;&emsp;&emsp;&ensp;:&emsp;<input type="password" name="pwd" required><br>
+<br><br>Comfirm Password&ensp;:&emsp;<input type="password" name="cpwd" id="pass" onclick="check()" required><br>
+<br><br><br><center><input id="submit" type="submit" value="Submit">&emsp;&emsp;<input id="reset" type="reset" value="Reset"></center>
+</form></fieldset></center>
+</body>
+</html>

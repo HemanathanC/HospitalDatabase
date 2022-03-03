@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bill Register </title>
+<link rel="stylesheet" href="form.css">
+</head>
+<style>
+fieldset{width:450px;}
+</style>
+<body>
+<center>
+<fieldset>
+<h2><b>Patient Bill</b></h2>
+<form name="pform" action="Bill_db" method="get">
+<center><h4><b>Patient Bill details</b></h4></center>
+<br>PatientID&emsp;&ensp;&nbsp;&emsp;&emsp;&emsp;:&emsp;<input type="number" name="pid" required><br>
+<br><br>Bill No&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;:&emsp;<input type="number" name="bno" required><br>
+<br><br>No Of Days Stayed&emsp;:&emsp;<input type="text" name="days"  required><br>
+<br><br>Bill Date&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;<input type="date" name="ddate"><br>
+<br><br>Total Cost(Rs.)&emsp;&emsp;&emsp;:&emsp;<input type="number" name="cost" required><br>
+<br><br><br><center><input id="submit" type="submit" value="Submit">&emsp;&emsp;<input id="reset" type="reset" value="Reset"></center>
+</form></fieldset></center>
+</body>
+</html>
